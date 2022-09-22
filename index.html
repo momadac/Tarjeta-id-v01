@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego A. Castro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-width: 320px;
+    }
+    
+    :root {
+        --primary:#1E63A8;
+        --secondary:#F5B345;
+        --dark:#000000;
+        --white:#fff;
+    } 
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--primary);
+        color: var(--white);
+    }
+    .navbar {
+        background-color: var(--primary);
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+    }
+    .brand {
+        margin-top: -9px;
+    }
+    .brand span {
+        color: var(--secondary);
+    }
+    .menu {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: space-around;
+        
+    }
+    .menu  li {
+        min-width: fit-content;
+        list-style: none;
+        
+    }
+    .menu a {
+        color: var(--white);
+        text-decoration: none;
+        padding: 10px 20px; 
+    }
+    
+    .menu li:hover a{
+        background-color: var(--secondary);
+        color: var(--primary);
+    }
+    
+    .menu .active {
+        color: var(--secondary);
+    }
+    
+    
+    .menu li a:hover {
+        color: var(--primary);
+        border-radius: 20px;
+    }
+    
+    
+    .main {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        text-align: justify;
+        margin: 0 auto;
+        width: 80vw;
+        height: 0vh;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2em;
+    }
+    .wrapperMain {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        padding-bottom: .4em;
+        font-size: 2.1em;
+        }
+        
+        .main img {
+        border:  8px solid var(--secondary);
+        max-width: 350px;
+        max-height: 520px;
+        z-index: 1;
+        }
+        
+        .info-content span {
+        color:var(--secondary);
+        }
+        .info-content{
+        width: 40vw;
+        }
+        
+        .download-cv {
+        padding: 10px 20px;
+        background-color: var(--secondary);
+        border: none;
+        border-radius: 20px;
+        margin-top: 16px;
+        cursor: pointer;
+        -webkit-box-shadow: 1px 3px 11px -5px rgba(66, 158, 233, 0.69);
+        -moz-box-shadow: 1px 3px 11px -5px rgba(66, 158, 233, 0.69);
+        box-shadow: 1px 3px 11px -5px rgba(66, 158, 233, 0.69);
+        }
+        
+        .download-cv:hover {
+        background-color:  #ffffff;
+        box-shadow: none;
+        }
+        #button-presup:hover {
+        background-color: var(--primary);
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="brand">
+                <h2>D<span>A</span>C</h2>
+            </div>
+            <!-- <ul class="menu">
+                <li><a href="#"  class="active">Inicio</a></li>
+                <li><a href="#">Quién Soy</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul> -->
+        </nav>
+        
+        <div class="wrapperMain">
+            <div class="main">
+                <div class="info-content">
+                    <h1>Soy Diego <span>Agustin</span> Castro</h1>
+                    <p>Técnico mecánico con orientación en tornería. Con un gran interés en la tecnología y en adquirir nuevos conocimientos. Mi creatividad para solucionar problemas técnicos y mi capacidad de aprendizaje haciendo, learning by doing, son dos cualidades que me distinguen.</p>
+                    <a download href="#"><button class="download-cv">Descargar CV</button></a>
+                </div>
+                <div class="main-img">
+                    <img src="img/DSC_0198color-REDES.jpg" alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+</body>
+</html>
